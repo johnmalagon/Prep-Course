@@ -6,7 +6,7 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
   if (x > y){
-    return x:
+    return x;
   }
   return y;
 }
@@ -30,9 +30,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status === 1)[
+  if(status === 1){
     return "Online"
-  ]
+  }
   else if(status === 2){
     return "Away"
   }
@@ -54,10 +54,10 @@ function saludo(idioma) {
     return "Ni Mao";
   } else if (idioma === "ingles"){
     return "Hello";
-  } else [
+  } else {
     return "Hola!";
-  ]
-}
+  }
+
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -106,8 +106,11 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (Math.floor(numero)) || numero=== 0)return true;
-return false; 
+  if (Math.floor(numero)) 
+  || (numero=== 0){
+    return true;}
+  }
+     
 }
 
 
@@ -131,7 +134,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1 < 0 || num2 < 0) || num3 < 0){
+  if (num1 < 0 || num2 < 0 || num3 < 0){
     return "Hay negativos";
   }
   else if (num1 === 0 || num2 === 0 || num3 === 0){
@@ -144,7 +147,7 @@ function operadoresLogicos(num1, num2, num3) {
     return num3 + 1;
   } 
   else {
-    return faise;
+    return false;
   }
 }
 
