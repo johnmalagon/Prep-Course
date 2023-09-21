@@ -10,9 +10,9 @@ function crearGato (nombre, edad) {
     nombre: nombre,
     edad: edad,
     meow: function(){
-      return "Meow";
+      return "Meow!";
     }
-  };
+  }
   return obj;
 }
 
@@ -37,7 +37,7 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  var result = objetoMisterioso.numeroMidterioso * 5;
+  var result = objetoMisterioso.numeroMisterioso * 5;
     return result;
 
 }
@@ -57,10 +57,10 @@ function nuevoUsuario (nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   var obj = {
-    nombre: "nombre",
-    email: "Email",
-    password: "password",
-  };
+    nombre: nombre,
+    email: email,
+    password: password,
+  }
 
   return obj;
 
@@ -112,9 +112,9 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
-  usuario.amigo.push(nuevoAmigo);
-
-    return usuario;
+  let valor = usuario.amigos;
+  valor.push(nuevoAmigo);
+  return usuario
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -123,10 +123,12 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  for(var i = 0; i < usuarios.length; i++) {
-      usuarios[i].esPremiun = true;
-  }
-    return usuarios;
+  var valor = usuarios;
+  for (var i = 0; i < valor.length; i++){
+     valor[i].esPremium = true
+     
+  }  
+  return valor
 }
 
 function sumarLikesDeUsuario (usuario) {

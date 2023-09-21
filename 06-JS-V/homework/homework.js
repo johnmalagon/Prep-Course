@@ -1,4 +1,4 @@
-// No cambies los nombres de las funciones.
+  // No cambies los nombres de las funciones.
 
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
@@ -8,18 +8,22 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-  function Usuario(opciones) {
+  class Usuario{
+  Constructor(opciones){
     this.usuario = opciones.usuario;
     this.nombre = opciones.nombre;
     this.email = opciones.email;
     this.password = opciones.password;
   }
+  saludar(){
+    return "Hola, mi nombre es "+this.nombre}
+  }
+    
+  }
 
-    Usuario.prototype.saludar = function () {
-        return "hola, mi nombre es " + this.nombre;
-    };
-      return Usuario;
-}
+    
+     
+
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
@@ -67,6 +71,8 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  var persona = new Persona();
+  
 }
   
 function agregarMetodo() {
